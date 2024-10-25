@@ -8,7 +8,7 @@ class Qr_Generator:
     def __init__(self,root):
         self.root=root
         self.root.geometry("1200x700+200+50")
-        self.root.title("STUDENT INFORMATION CONVERT IN QR")
+        self.root.title("STUDENT MANAGEMENT SYSTEM IN QR")
         self.root.resizable(False,False)
 
         title=Label(self.root,text="STUDENT INFORMATION",font=("goudy old style",25),bg="#043246",fg='white').place(x=0,y=0,relwidth=1)
@@ -26,7 +26,6 @@ class Qr_Generator:
         self.var_9=StringVar()
         self.var_10=StringVar()
         self.var_11=StringVar()
-    
         self.var_12=StringVar()
         self.var_13=StringVar()
         self.var_14=StringVar()
@@ -39,7 +38,7 @@ class Qr_Generator:
         self.var_21=StringVar()
         self.var_22=StringVar()
         self.var_23=StringVar() 
-        #self.root_24=Stringvar()
+       # self.var_24=StringVar()
         #self.root_25=Stringvar()
         #self.root_26=Strinvar()
 
@@ -50,7 +49,7 @@ class Qr_Generator:
 
         #================insaid title==============================
 
-        emp_title=Label(emp_Frame,text="STUDENT INFORMATION FILL PAGE",font=("goudy old style",20),bg="#3f51b5",fg='white').place(x=0,y=0,relwidth=1)
+        emp_title=Label(emp_Frame,text="STUDENT INFORMATION FILLING PAGE",font=("goudy old style",20),bg="#3f51b5",fg='white').place(x=0,y=0,relwidth=1)
 #===================================================Entry windows label and entrys==========================================================
 
 #=========================================label=====================================
@@ -78,7 +77,6 @@ class Qr_Generator:
         lbl_22=Label(emp_Frame,text="PHONE NUMBER",font=("times new roman",15,'bold'),bg='white').place(x=430,y=425)
         lbl_23=Label(emp_Frame,text="WHATSAPP NUMBER",font=("times new roman",14,'bold'),bg='white').place(x=430,y=465)
 
-
         #==================================data entry box=================================
 
         txt_1=Entry(emp_Frame,font=("times new roman",15),textvariable=self.var_1,bg='lightyellow').place(x=210,y=60)
@@ -104,12 +102,12 @@ class Qr_Generator:
         txt_21=Entry(emp_Frame,font=("times new roman",15),textvariable=self.var_21,bg='lightyellow').place(x=640,y=385)
         txt_22=Entry(emp_Frame,font=("times new roman",15),textvariable=self.var_22,bg='lightyellow').place(x=640,y=425)
         txt_23=Entry(emp_Frame,font=("times new roman",15),textvariable=self.var_23,bg='lightyellow').place(x=640,y=465)
-    
+
 
         #==========To Create button============
         
-        btn_generate=Button(emp_Frame,text='CONVERT_QR',command=self.generate,font=("times new roman",18,'bold'),bg='#00FF00',fg='white').place(x=545,y=580,width=200,height=30)        
-        btn_clear=Button(emp_Frame,text='CLEAR',command=self.clear,font=("times new roman",18,'bold'),bg='red',fg='white').place(x=755,y=580,width=120,height=30)
+        btn_generate=Button(emp_Frame,text='CONVERT_QR',command=self.generate,font=("times new roman",18,'bold'),bg='#00FF00',fg='white').place(x=545,y=580,width=200,height=40)        
+        btn_clear=Button(emp_Frame,text='CLEAR',command=self.clear,font=("times new roman",18,'bold'),bg='red',fg='white').place(x=755,y=580,width=120,height=40)
 
         self.msg=''
         self.lbl_msg=Label(emp_Frame,text=self.msg,font=("times new roman",18),bg='white',fg='green')
@@ -131,7 +129,7 @@ class Qr_Generator:
         #====================D.DETIALS==============
         self.qr_code_1=Label(qr_Frame,text='DEVALOPED BY:',font=('times new roman',15),bg='#F5F5F5',fg='black',relief=RIDGE)
         self.qr_code_1.place(x=20,y=350,width=220,height=30)    
-        self.qr_code_1=Label(qr_Frame,text='JANARTHANAN',font=('times new roman',18),bg='#F5F5F5',fg='black',relief=RIDGE)
+        self.qr_code_1=Label(qr_Frame,text='Swathi & Team',font=('times new roman',18),bg='#F5F5F5',fg='black',relief=RIDGE)
         self.qr_code_1.place(x=10,y=400,width=240,height=30)
 
         self.msg1=''
@@ -176,8 +174,8 @@ class Qr_Generator:
             #=================================qr generate button commands=================================================
             #========================True or false statement=============================
     def generate(self):
-       # if self.var_1.get()=="" or self.var_2.get()=="" or self.var_3.get()==""  or self.var_4.get()=="" or self.var_5.get()=="" or self.var_6.get()=="" or self.var_7.get()=="" or self.var_8.get()=="" or self.var_9.get()=="" or self.var_10.get()=="" or self.var_11.get()=="" or self.var_12.get()=="" or self.var_13.get()=="" or self.var_14.get()=="" or self.var_15.get()=="" or self.var_16.get()=="" or self.var_17.get()=="" or self.var_18.get()=="" or self.var_19.get()=="" or self.var_20.get()=="" or self.var_21.get()=="" or self.var_22.get()=="" or self.var_23.get()=="":
-        if self.var_1.get()=="" or self.var_2.get()=="" :
+        if self.var_1.get()=="" or self.var_2.get()=="" or self.var_3.get()==""  or self.var_4.get()=="" or self.var_5.get()=="" or self.var_6.get()=="" or self.var_7.get()=="" or self.var_8.get()=="" or self.var_9.get()=="" or self.var_10.get()=="" or self.var_11.get()=="" or self.var_12.get()=="" or self.var_13.get()=="" or self.var_14.get()=="" or self.var_15.get()=="" or self.var_16.get()=="" or self.var_17.get()=="" or self.var_18.get()=="" or self.var_19.get()=="" or self.var_20.get()=="" or self.var_21.get()=="" or self.var_22.get()=="" or self.var_23.get()=="":
+       # if self.var_1.get()=="" or self.var_2.get()=="" :
              
             self.msg='All Fileds are required!!!'
             self.lbl_msg.config(text=self.msg,fg='red')
@@ -191,7 +189,6 @@ class Qr_Generator:
         else:
             qr_data=(f" BATCH :{self.var_1.get()}\n ROLL NO :{self.var_2.get()}\n NAME :{self.var_3.get()}\n DATE OF BIRTH :{self.var_4.get()}\n GENDER :{self.var_5.get()}\n BLOOD GROUP :{self.var_6.get()}\n WEIGHT(KGs):{self.var_7.get()}\n HEIGHT(CM) :{self.var_8.get()}\n IDENTIFICATION MARK :{self.var_9.get()}\n NATIONALITY :{self.var_10.get()}\n RELIGION :{self.var_11.get()}\n COMMUNITY :{self.var_12.get()}\n FATHER NAME :{self.var_13.get()}\n MOTHER NAME :{self.var_14.get()}\n FATHER'S OCCUPATION :{self.var_15.get()}\n ANNUAL INCOME :{self.var_16.get()}\n 10TH MARK :{self.var_17.get()}\n 12TH MARK :{self.var_18.get()}\n LANGUAGE KNOWN :{self.var_19.get()}\n DEPARTMENT :{self.var_20.get()}\n ADDRESS :{self.var_21.get()}\n PHONE NUMBER :{self.var_22.get()}\n WHATSAPP NUMBER :{self.var_23.get()}\n\n\t\t<<<=========================================>>>")
             qr_code=qrcode.make(qr_data)
-            #print(qr_code)
             qr_code=resizeimage.resize_cover(qr_code,[220,220])
             qr_code.save(str(self.var_2.get()+'.png'))
             #==========qr code image update============
@@ -208,27 +205,6 @@ class Qr_Generator:
 
             with open(self.var_2.get()+".txt","w") as aj:
                 aj.write(qr_data)
-                #===================check statement==================
-
-   # def check(self):
-        #if self.var_1.get()=="" or self.var_2.get()=="" or self.var_3.get()==""  or self.var_4.get()=="" or self.var_5.get()=="" or self.var_6.get()=="" or self.var_7.get()=="" or self.var_8.get()=="" or self.var_9.get()=="" or self.var_10.get()=="" or self.var_11.get()=="" or self.var_12.get()=="" or self.var_13.get()=="" or self.var_14.get()=="" or self.var_15.get()=="" or self.var_16.get()=="" or self.var_17.get()=="" or self.var_18.get()=="" or self.var_19.get()=="" or self.var_20.get()=="" or self.var_21.get()=="" or self.var_22.get()=="" or self.var_23.get()=="":
-     #   if self.var_1.get()=="" or self.var_2.get()=="" :
-      ##      self.msg1='No qr avaliable!!'
-      #      self.lbl_msg1.config(text=self.msg1,fg='red')
-       #     self.lbl_msg1.place(y=300)
-            
-
-
-       # else:
-          #  self.msg1="you have a qr"
-          #  self.lbl_msg1.config(text=self.msg1,fg='green')
-           # self.lbl_msg1.place(y=300)
-          
-            
-            
-
-        
-
 #=======================mainloop funtion===========================         
     
 root=Tk()
